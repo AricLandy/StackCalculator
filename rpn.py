@@ -3,7 +3,7 @@
 import operator
 import readline
 import colored
-
+from colored import stylize
 
 operators = {
     '+': operator.add,
@@ -35,7 +35,10 @@ def calculate(myarg):
 def main():
     while True:
         result = calculate(input("rpn calc> "))
-        print("Result: ", result)
+        if result < 0:
+            print(stylize("Result: " + str(result), colored.fg("red")))
+        else:        
+            print("Result: ", result)
 
 if __name__ == '__main__':
     main()
