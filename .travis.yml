@@ -11,7 +11,8 @@ install:
 
 
 script: 
-  - coverage run pytest
+
+  - coverage run test_rpn.py
 
 after_success:
  - coveralls
