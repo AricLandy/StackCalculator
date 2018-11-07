@@ -5,6 +5,10 @@ python:
 
 install:
  - pip install python-coveralls
+ - pip install coverage
+ - pip install nose
+
+
 
 script: pytest
 
