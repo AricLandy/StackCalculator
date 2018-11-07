@@ -1,19 +1,17 @@
 language: python
-
-python:
+python: 
  - "3.5"
 
-install:
- - pip install python-coveralls
- - pip install coverage
- - pip install nose
+install: 
+  - "pip install python-coveralls"
+  - "pip install coverage"
+  - "pip install nose"
+  - "pip3 install colored"
 
- - pip3 install colored
 
 
-script:
- - pytest
- - coverage run pytest test
+script: 
+  - coverage run pytest
 
 after_success:
  - coveralls
