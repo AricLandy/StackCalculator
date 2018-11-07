@@ -2,15 +2,17 @@
 
 import operator
 import readline
+import colored
+
 
 operators = {
     '+': operator.add,
     '-': operator.sub,
     '*': operator.mul,
     '/': operator.truediv,
-    '^': operator.pow,
-    'x': operator.xor,
-    'c': operator.concat
+    '^': operator.pow
+#    'x': operator.xor,
+#    'c': operator.concat
 }
 
 def calculate(myarg):
