@@ -36,6 +36,9 @@ def main():
     while True:
         result = calculate(input("rpn calc> "))
         if result < 0:
+            color = fg('#C0C0C0') + bg('#00005f')
+            res = attr('reset')
+            print (color + "Hello World !!!" + res)
             print(stylize("Result: " + str(result), colored.fg("red")))
         else:        
             print("Result: ", result)
