@@ -10,7 +10,10 @@ install:
 
 
 
-script: pytest
+script:
+ - pytest
+ - nosetests --with-coverage
+
 
 after_success:
  - coveralls
